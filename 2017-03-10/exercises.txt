@@ -1,0 +1,14 @@
+// Create new html and js files for these exercises
+
+// Write functions for each of the following
+
+// sample
+// calculate the area of a circle given it's radius
+
+// 1. to calculate the area of a triangle from 
+// the base and height
+
+// 2. give the average of an array of numbers
+
+// 3. double the elements of an array, 
+// do not return a new array

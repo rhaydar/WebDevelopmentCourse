@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS Selectors</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<!-- header -->
+	<header>
+		<h1>Selectors exercise</h1>
+	</header>
+
+	<hr>
+	<!-- descendant selector -->
+	<h4>Descendant selector</h4>
+	<div id="container1">
+	   <ul>
+	      <li> List Item
+	        <ul>
+	           <li> Child </li>
+	        </ul>
+	      </li>
+	      <li> List Item </li>
+	      <li> List Item </li>
+	      <li> List Item </li>
+	   </ul>
+	</div>
+	<hr>
+	<!-- direct descendant selector -->
+	<h4>Direct Descendant selector</h4>
+	<div id="container2">
+	   <ul>
+	      <li> List Item
+	        <ul>
+	           <li> Child </li>
+	        </ul>
+	      </li>
+	      <li> List Item </li>
+	      <li> List Item </li>
+	      <li> List Item </li>
+	   </ul>
+	</div>
+	<hr>
+	<!-- attribute selector -->
+	<h4>Form</h4>
+	<form>
+		First Name:
+		<input type="text" name="first-name"><br>
+		Last Name:
+		<input type="text" name="last-name" required><br>
+
+		<input id="agreement" type="checkbox" name="agreement">
+		<label for="agreement">Agreement:</label>
+		<br>
+		<input type="button" name="submit" value="Submit">
+	</form>
+	<hr>
+
+	<!-- hover selector -->
+	<h4>Hover selector</h4>
+	<p>This will change color when I hover over it...</p>
+
+	<p id="par2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</body>
+</html>

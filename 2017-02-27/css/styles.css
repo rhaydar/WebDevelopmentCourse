@@ -1,0 +1,15 @@
+h1 {
+	font-size: 20px;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+.btn-success {
+	background: purple;
+}
+
+.jumbotron {
+	background-image: url("https://static.pexels.com/photos/27403/pexels-photo-27403.jpg");
+	margin-top: 0px;
+}

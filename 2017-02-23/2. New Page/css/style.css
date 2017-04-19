@@ -1,0 +1,80 @@
+/* CSS file for Introduction to HTML5 course */
+
+body {
+  width: 800px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+header {
+  background-color: #009999;
+  height: 100px;
+}
+
+footer {
+  background-color: #FFD073;
+  height: 60px;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  padding-top: 5px;
+  margin-top: 0; /*This prevents there being an empty gap between the page content and the browser tab above.*/
+  margin-bottom: 5px;
+}
+
+footer p {
+  font-size: 12px;
+  color: #A64B00;
+  margin: 0;
+  padding-top: 5px;
+}
+
+nav {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  background-color: #FFD073;
+  margin: 0 20px 10px 0;  /*This creates the margin between the nav section and the main content.*/
+  float: left;
+}
+
+nav ul {
+  margin: 0;
+  padding: 10px;
+}
+
+nav li {
+  list-style-type: none;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav a {
+  color: #A64B00;
+}
+
+.main {
+  padding: 10px;
+  background-color: #006363;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+  color: #FFAA00;
+}
+
+.main p {
+  font-size: 14px;
+  color: white;
+}
+
+.clearfloat {
+  clear: both;
+}

@@ -1,0 +1,48 @@
+#container1 ul {
+	border:1px solid black;
+}
+
+#container2 > ul {
+	border:1px solid red;
+}
+
+/*attribute selector*/
+input[type="text"] {
+	border: 2px dashed purple;
+}
+
+input[type] {
+	border: 2px solid brown;
+}
+
+input[required] {
+	border: 3px solid #f00;
+}
+
+input[type="checkbox"]:checked + label{
+	color: rgba(0,255,0,0.5);
+}
+
+/*hover pseudo class*/
+p:hover {
+	background: green;
+	color: yellow;
+	font-family: verdana;
+}
+
+#par2::first-line {
+	font-size: 24px;
+}
+
+#container1 ul:first-child {
+	color: red;
+
+}
+
+#container1 li:nth-child(2):hover {
+	font-family: verdana;
+	
+}
+
+
+
