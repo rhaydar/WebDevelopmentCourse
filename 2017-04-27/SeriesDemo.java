@@ -1,5 +1,6 @@
 interface Series {
 	int getNext(); //return next number in series
+	int getPrevious(); //return previous number in series
 	void reset(); //restarts
 	void setStart(int x); //set starting value
 }
@@ -72,20 +73,26 @@ class ByThrees implements Series {
 
 class SeriesDemo {
 	public static void main(String[] args) {
-		ByThrees ob = new ByThrees();
+		Series in;
+		ByTwos bt = new ByTwos(222);
+		ByThrees bth = new ByThrees(333);
 
+		in = bt;
 		for (int i=0; i<5; i++) {
-			System.out.println(ob.getPrevious());
+			System.out.println(in.getPrevious());
 		}
-
-		// ob.reset();
+		System.out.println();
+		
+		in = bth;
 		for (int i=0; i<5; i++) {
-			System.out.println(ob.getNext());
+			System.out.println(in.getNext());
 		}
-
-		ob.setStart(100);
+		System.out.println();
+		
+		in = bt;
+		in.setStart(100);
 		for (int i=0; i<5; i++) {
-			System.out.println(ob.getNext());
+			System.out.println(in.getNext());
 		}
 	}
 }
