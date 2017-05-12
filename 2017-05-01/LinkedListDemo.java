@@ -53,10 +53,77 @@ class LinkedList {
 	LinkedList() {
 		head = null;
 	}
+
+	void push(int val) {
+		if (head == null) {
+			head = new Node(val);
+		}
+		else {
+			Node temp = head;
+			while (temp.next != null) {
+				temp = temp.next;
+			}
+			temp.next = new Node(val);
+		}
+	}
+
+	void pushFront(int val) {
+
+	}
+
+	int pop() {
+		return 0;
+	}
+
+	int popBack() {
+		return 0;
+	}
+
+	boolean remove(int x) {
+		return false;
+	}
+
+	boolean find(int val) {
+		return false;
+	}
+
+	int length() {
+		int nodes = 0;
+		Node temp = head;
+		while (temp != null) {
+			nodes++;
+			temp = temp.next;
+		}
+		return nodes;
+	}
+
+	void print() {
+		Node temp = head;
+		while (temp != null) {
+			System.out.print(temp.data + " ");
+			temp = temp.next;
+		}
+		System.out.println();
+	}
 }
 
 class LinkedListDemo {
 	public static void main(String[] args) {
 		LinkedList list = new LinkedList();
+		list.push(1);
+		list.print();
+		System.out.println("length: " + list.length() + "\n");
+		list.push(2);
+		list.print();
+		System.out.println("length: " + list.length() + "\n");
+		list.push(4);
+		list.print();
+		System.out.println("length: " + list.length() + "\n");
+		list.push(8);
+		list.print();
+		System.out.println("length: " + list.length() + "\n");
+		list.push(16);
+		list.print();
+		System.out.println("length: " + list.length() + "\n");
 	}
 }
