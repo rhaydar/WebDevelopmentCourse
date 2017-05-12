@@ -68,15 +68,49 @@ class LinkedList {
 	}
 
 	void pushFront(int val) {
-
+		if (head == null) {
+			head = new Node(val);
+		}
+		else {
+			Node newNode = new Node(val);
+			newNode.next = head;
+			head = newNode;
+		}
 	}
 
 	int pop() {
-		return 0;
+		// empty list, return -1
+		if (head == null) {
+			return -1;
+		}
+		else {
+			int data = head.data;
+			head = head.next;
+			return data;
+		}
 	}
 
 	int popBack() {
-		return 0;
+		// empty list, return -1
+		if (head == null) {
+			return -1;
+		}
+		// single node
+		else if (head.next == null) {
+			int data = head.data;
+			head = null;
+			return data;
+		}
+		// more than 1 node
+		else {
+			Node temp = head;
+			while (temp.next.next != null) {
+				temp = temp.next;
+			}
+			int data = temp.next.data;
+			temp.next = null;
+			return data;
+		}
 	}
 
 	boolean remove(int x) {
@@ -84,7 +118,16 @@ class LinkedList {
 	}
 
 	boolean find(int val) {
-		return false;
+		boolean found = false;
+		Node temp = head;
+		while (temp != null) {
+			if (temp.data == val) {
+				found = true;
+				break;
+			}
+			temp = temp.next;
+		}
+		return found;
 	}
 
 	int length() {
@@ -110,6 +153,8 @@ class LinkedList {
 class LinkedListDemo {
 	public static void main(String[] args) {
 		LinkedList list = new LinkedList();
+		// push(), print(), and length() tests
+		System.out.println("TESTING PUSH(), PRINT(), AND LENGTH()\n");
 		list.push(1);
 		list.print();
 		System.out.println("length: " + list.length() + "\n");
@@ -125,5 +170,55 @@ class LinkedListDemo {
 		list.push(16);
 		list.print();
 		System.out.println("length: " + list.length() + "\n");
+
+		// pushFront() tests
+		System.out.println("TESTING PUSHFRONT()\n");
+		// reset list to empty list
+		list.head = null;
+		list.pushFront(-1);
+		list.print();
+		System.out.println();
+		list.pushFront(-2);
+		list.print();
+		System.out.println();
+		list.pushFront(-4);
+		list.print();
+		System.out.println();
+
+		// pop() tests
+		// System.out.println("TESTING POP()\n");
+		// System.out.println("popped: " + list.pop());
+		// list.print();
+		// System.out.println();
+		// System.out.println("popped: " + list.pop());
+		// list.print();
+		// System.out.println();
+		// System.out.println("popped: " + list.pop());
+		// list.print();
+		// System.out.println();
+
+		// popBack() tests
+		// System.out.println("TESTING POPBACK()\n");
+		// System.out.println("popped back: " + list.popBack());
+		// list.print();
+		// System.out.println();
+		// System.out.println("popped back: " + list.popBack());
+		// list.print();
+		// System.out.println();
+		// System.out.println("popped back: " + list.popBack());
+		// list.print();
+		// System.out.println();
+
+		// find() tests
+		System.out.println("TESTING FIND()\n");
+		int x = 0;
+		System.out.println("found " + x + ": " + list.find(x));
+		x = 1;
+		System.out.println("found " + x + ": " + list.find(x));
+		x = -4;
+		System.out.println("found " + x + ": " + list.find(x));
+		x = 5;
+		System.out.println("found " + x + ": " + list.find(x));
+
 	}
 }
