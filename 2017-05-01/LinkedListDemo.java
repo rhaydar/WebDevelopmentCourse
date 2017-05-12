@@ -31,3 +31,32 @@
 		list.pop();
 		list.popBack();
 */
+
+class Node {
+	int data;
+	Node next;
+
+	Node() {
+		data = 0;
+		next = null;
+	}
+
+	Node(int val) {
+		data = val;
+		next = null;
+	}
+}
+
+class LinkedList {
+	Node head;
+
+	LinkedList() {
+		head = null;
+	}
+}
+
+class LinkedListDemo {
+	public static void main(String[] args) {
+		LinkedList list = new LinkedList();
+	}
+}

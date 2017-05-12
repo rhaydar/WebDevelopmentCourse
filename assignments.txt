@@ -1,0 +1,23 @@
+Assignments List:
+
+-HTML project (parts 2-9): 2/16-2/24
+-Gallery page: 2/27
+-Landing page: 3/1
+
+-JS Functions exercises: 3/13
+-Score Keeper: ~3/20
+-Color Game: ~3/21
+
+-Bubble Sort: 4/18
+-Queue: 4/19
+-Reverse String (recursive and iterative methods): 4/21
+-OOP assignment: 4/25
+-Linked List Data Structure: 5/1
+
+
+Inclass exercises (not collected):
+
+-Table of planets: 2/22
+-DOM exercise: 3/16
+-Help System: 4/3
+
