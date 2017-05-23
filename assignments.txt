@@ -21,3 +21,19 @@ Inclass exercises (not collected):
 -DOM exercise: 3/16
 -Help System: 4/3
 
+CodeShare.io practices:
+-2017-05-18
+	Q1) Write a method that returns the first non-repeated character in a string.
+	Q2) Write a method that returns true if two strings are the same, false otherwise. You cannot use the .equals() method of the String class.
+
+-2017-05-22
+	Q1) Write a function that checks to see if a string
+	is a palindrome, a word (or phrase) that is the same
+	spelled forwards and backwards. If the string is a 
+	palindrome, then the function should return true, 
+	false otherwise.
+
+	Q2) Write a function that takes two strings, and checks to see if one is an anagram of the other. An anagram has the same characters, the same number of times. Examples:
+	"listen" and "silent", "admirer" and "married". If the two strings are anagrams, then return true, otherwise return false.
+
+
